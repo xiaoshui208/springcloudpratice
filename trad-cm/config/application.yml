@@ -1,0 +1,22 @@
+server:
+  port: 5071
+  
+spring:
+  application:
+    name: trad-cm
+  zipkin:
+    base-url: http://localhost:5060
+  sleuth:
+    sampler:
+      percentage: 1.0
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:5080/eureka/
+#    healthcheck: 
+#      enabled: true
+  instance:
+    prefer-ip-address: true
+#    lease-expiration-duration-in-seconds: 10
+#    lease-renewal-interval-in-seconds: 3

@@ -1,0 +1,13 @@
+server:
+  port: 5050
+  
+spring:
+  application:
+    name: trad-mgsg-http
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:5080/eureka/
+  instance:
+    prefer-ip-address: true
